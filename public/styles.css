@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+#colorGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 30px); /* Adjust depending on how many colors */
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.colorButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+#canvasContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    cursor: crosshair;
+}
+
+#3dPreview {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+

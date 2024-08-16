@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Skin/Mob Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Minecraft Skin/Mob Creator</h1>
+
+    <div id="controls">
+        <div id="colorGrid"></div>
+        <button onclick="switchLayer()">Switch Layer</button>
+        <button onclick="downloadSkin()">Download Skin</button>
+        <input type="file" accept="image/png" onchange="uploadSkin(event)">
+    </div>
+
+    <div id="canvasContainer">
+        <canvas id="baseLayer"></canvas>
+        <canvas id="overlayLayer"></canvas>
+    </div>
+
+    <div id="3dPreview"></div>
+
+    <!-- Include Three.js from the CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/three-js@79.0.0/three.min.js"></script>
+    <!-- Include iro.js from the CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/iro@0.9.3/dist/iro.min.js"></script>
+    <script src="skinCanvas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
